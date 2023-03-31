@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Find Two Numbers That add up to value</title>
+  </head>
+  <body>
+    <div id="root">
+      <p style="text-align:center; font-size:2rem">
+        
+        <br/> <br/><br/>
+function arrayMagic(array, findNumber)
+ <br/>
+{
+    <br/>
+let arrayLength = array.length;
+<br/>
+
+for(var i = 0; i<arrayLength; i++){
+    <br/>
+    for(var j = i; j<arrayLength; j++ ){
+<br/>
+      
+        if (array[i] + array[j+1] == findNumber){
+<br/>
+            console.log(`${array[i]} + ${array[j+1]} => ${findNumber}.` );
+     <br/>
+        }
+      <br/>
+
+    }
+    <br/>
+}
+<br/>
+
+}
+<br/>
+<br/>
+arrayMagic([12, 18 , 3 , 4, 16, 11], 28);
+
+<br />
+Output :- 12 + 16 => 28.
+     
+<br/></p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
